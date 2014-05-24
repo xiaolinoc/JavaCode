@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>oc-netty5</artifactId>
+
+	<parent>
+		<groupId>com.xiaolinoc</groupId>
+		<artifactId>oc-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../oc-parent/pom.xml</relativePath>
+	</parent>
+
+	<properties>
+		<metrics.version>3.0.1</metrics.version>
+		<netty.version>5.0.0.Alpha1</netty.version>
+		<protobuf.version>2.4.1</protobuf.version>
+		
+	</properties>
+
+	<dependencies>
+		<!-- netty -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>${netty.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-example</artifactId>
+			<version>${netty.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yammer.metrics</groupId>
+			<artifactId>metrics-core</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>${protobuf.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>
